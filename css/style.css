@@ -1,0 +1,132 @@
+/* begin webfonts*/
+@font-face {
+    font-family: pnl;
+    src:url('../webfonts/Proximanova_light.otf');
+}
+@font-face {
+    font-family: pnr;
+    src:url('../webfonts/Proximanova_regular.ttf');
+}
+@font-face {
+    font-family: pnb;
+    src:url('../webfonts/Proximanove_bold.otf');
+}
+.ff-l{
+    font-family: pnl;
+}
+.ff-r{
+    font-family: pnr;
+}
+.ff-b{
+    font-family: pnb;
+}
+/* end webfonts*/
+
+/*begin fontsizes*/
+.fs-xm{
+    font-size: 0.875rem; /*14px*/
+}
+.fs-sm{
+    font-size: 1.125rem; /*18px*/
+}
+.fs-lg{
+    font-size: 2.250rem; /*36px*/
+}
+.fs-xl{
+    font-size: 3rem; /*48px;*/
+}
+/*end fontsizes*/
+
+/** begin css*/
+::placeholder{
+    color: white;
+}
+/*begin header*/
+#myheader {
+    background: url('../images/header.png') no-repeat top center;
+    background-size: cover;
+    /*height: 100vh;*/
+}
+.nav-link{
+    border:1px solid transparent;
+    border-radius: 45px;
+    padding-left:15px !important;
+    padding-right:15px !important;
+    color: white;
+}
+/*.nav-link.active{
+    color:red; !important;
+}*/
+.nav-link:hover{
+    border:1px solid white;
+    background:white;
+    color: red;
+}
+/*end header*/
+
+/*begin section price*/
+#price h2, h3{
+    background: linear-gradient(to right, #cb0035 0%, #e06900 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#price button:hover{
+    background: linear-gradient(to right, #cb0035 0%, #e06900 100%);
+}
+#price{
+    background: #f6f6f6;
+}
+.btnprice{
+    background: #274799;
+}
+.circle{
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    border: 1px solid grey;
+    color: #000;
+    font: 26px Arial, sans-serif;
+    padding-left:14px;
+    padding-right:14px;
+    padding-top:8px;
+}
+/*end section price*/
+/*begin section nature*/
+#nature h2{
+    background: linear-gradient(to right, #cb0035 0%, #e06900 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*end section nature*/
+
+/*begin section vidair*/
+#vidair h2{
+    background: linear-gradient(to right, #cb0035 0%, #e06900 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#vidair button:hover{
+    background: linear-gradient(to right, #cb0035 0%, #e06900 100%);
+}
+/*end section vidair*/
+/*begin section newsletter*/
+#newsletter{
+    background: url('../images/Newsletter.png') no-repeat top center;
+    background-size: cover;
+}
+#mailbox{
+    width: fit-content;
+}
+input[type=email]{
+}
+/*end section newsletter*/
+.text-justify{
+    text-align: justify;
+}
+@media (min-width: 992px) {
+    #nature{
+        background:url('../images/Dronebackground.png') no-repeat right center;
+    }
+}
